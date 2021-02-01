@@ -1,4 +1,7 @@
+import React from 'react';
 import styled from 'styled-components'
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 import db from '../db.json';
 import Widget from '../src/components/Widget'
@@ -7,12 +10,12 @@ import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
 
-const BackgroundImage = styled.div`
-  background-image: url(${db.bg});
-  flex: 1;
-  background-size: cover;
-  background-position: center;
-`;
+// const BackgroundImage = styled.div`
+//   background-image: url(${db.bg});
+//   flex: 1;
+//   background-size: cover;
+//   background-position: center;
+// `;
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -26,8 +29,13 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>RxJS Quiz - Teste seus conhecimentos</title>
+      </Head>
       <QuizContainer>
         <QuizLogo />
           <Widget>
@@ -36,6 +44,18 @@ export default function Home() {
             </Widget.Header>
             <Widget.Content>
               <p>{db.description}</p>
+              <form onSubmit={function (event) {
+                event.preventDefault(); // nao recarrega mais a página
+                const name = 'Leticia';
+                router.push(`/quiz?name=${name}`);
+                console.log('Fazendo uma submissão por meio do react');
+                // router manda para a próxima página
+              }}>
+                <input placeholder="Digite o seu nome"/>
+                <button type="submit">
+                  Jogar [seuNome]
+                </button>
+              </form>
             </Widget.Content>
           </Widget>
 
