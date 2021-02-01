@@ -9,13 +9,8 @@ import QuizLogo from '../src/components/QuizLogo'
 import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
-
-// const BackgroundImage = styled.div`
-//   background-image: url(${db.bg});
-//   flex: 1;
-//   background-size: cover;
-//   background-position: center;
-// `;
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -49,14 +44,15 @@ export default function Home() {
                   event.preventDefault(); // nao recarrega mais a página
                   router.push(`/quiz?name=${name}`);
                 }}>
-                <input 
-                  onChange={function (event) {
-                    setName(event.target.value);
-                  }}
-                  placeholder="Digite o seu nome"/>
-                <button type="submit" disabled={name.length === 0}>
-                  Jogar {name}
-                </button>
+                <Input
+                  name="nomeDoUsuario"
+                  onChange={(event) => setName(event.target.value)}
+                  placeholder="Digite o seu nome"
+                  value={name}
+                />
+                <Button type="submit" disabled={name.length === 0}>
+                  {`Jogar ${name}`}
+                </Button>
               </form>
             </Widget.Content>
           </Widget>
