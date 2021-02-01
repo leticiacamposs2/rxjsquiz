@@ -29,7 +29,7 @@
       }
     ],
     "external": [
-      ""
+      "https://rxjsquiz.vercel.app/"
     ],
     "theme": {
       "colors": {
