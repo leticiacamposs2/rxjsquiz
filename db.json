@@ -9,20 +9,22 @@
         "description": "Essa é pra aquecer",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "alternativa 1",
+          "alternativa 2",
+          "alternativa 3",
+          "alternativa 4"
         ]
       },
       {
         "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
+        "title": "Pergunta 1",
         "description": "Faz tempo em haha",
         "answer": 0,
         "alternatives": [
-          "background: linear-gradient(#e66465, #9198e5);",
-          "background: gradient(#e66465, #9198e5);"
+          "alternativa 1",
+          "alternativa 2",
+          "alternativa 3",
+          "alternativa 4"
         ]
       }
     ],
