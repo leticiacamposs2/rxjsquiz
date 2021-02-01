@@ -1,0 +1,43 @@
+{
+    "bg": "https://www.educative.io/api/page/6083106485305344/image/download/5142091498782720",
+    "title": "Quiz sobre RxJS",
+    "description": "Teste os seus conhecimentos sobre RxJS e veja o quanto você aprendeu",
+    "questions": [
+      {
+        "image": "https://rxjs-dev.firebaseapp.com/generated/images/marketing/home/Rx_Logo-512-512.png",
+        "title": "O que é RxJS?",
+        "description": "Essa é pra aquecer",
+        "answer": 2,
+        "alternatives": [
+          ".elemento",
+          "*elemento",
+          "#elemento",
+          "%elemento"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "title": "Como fazer um background gradiente com css?",
+        "description": "Faz tempo em haha",
+        "answer": 0,
+        "alternatives": [
+          "background: linear-gradient(#e66465, #9198e5);",
+          "background: gradient(#e66465, #9198e5);"
+        ]
+      }
+    ],
+    "external": [
+      ""
+    ],
+    "theme": {
+      "colors": {
+        "primary": "#9c27b0",
+        "secondary": "#d500f9",
+        "mainBg": "#171B35",
+        "contrastText": "#FFFFFF",
+        "wrong": "#FF5722",
+        "success": "#4CAF50"
+      },
+      "borderRadius": "4px"
+  }
+}
