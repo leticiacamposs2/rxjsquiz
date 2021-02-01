@@ -30,6 +30,7 @@ export const QuizContainer = styled.div`
 
 export default function Home() {
   const router = useRouter();
+  const [name, setName] = React.useState('');
 
   return (
     <QuizBackground backgroundImage={db.bg}>
@@ -45,15 +46,16 @@ export default function Home() {
             <Widget.Content>
               <p>{db.description}</p>
               <form onSubmit={function (event) {
-                event.preventDefault(); // nao recarrega mais a página
-                const name = 'Leticia';
-                router.push(`/quiz?name=${name}`);
-                console.log('Fazendo uma submissão por meio do react');
-                // router manda para a próxima página
-              }}>
-                <input placeholder="Digite o seu nome"/>
-                <button type="submit">
-                  Jogar [seuNome]
+                  event.preventDefault(); // nao recarrega mais a página
+                  router.push(`/quiz?name=${name}`);
+                }}>
+                <input 
+                  onChange={function (event) {
+                    setName(event.target.value);
+                  }}
+                  placeholder="Digite o seu nome"/>
+                <button type="submit" disabled={name.length === 0}>
+                  Jogar {name}
                 </button>
               </form>
             </Widget.Content>
