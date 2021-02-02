@@ -4,7 +4,7 @@
     "description": "Teste os seus conhecimentos sobre RxJS e veja o quanto você aprendeu",
     "questions": [
       {
-        "image": "https://rxjs-dev.firebaseapp.com/generated/images/marketing/home/Rx_Logo-512-512.png",
+        "image": "https://miro.medium.com/max/1004/1*7_RZMTjJyiw3J9-svhLpZw.gif",
         "title": "O que é RxJS?",
         "description": "Essa é pra aquecer",
         "answer": 0,
@@ -16,15 +16,15 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Pergunta 1",
-        "description": "Faz tempo em haha",
-        "answer": 0,
+        "image": "https://miro.medium.com/max/500/1*gTgRYkLc0VijjABXCMCurQ.jpeg",
+        "title": "O RxJS e o Padrão Observer",
+        "description": "É correto afirmar:",
+        "answer": 3,
         "alternatives": [
-          "alternativa 1",
-          "alternativa 2",
-          "alternativa 3",
-          "alternativa 4"
+          "Trata-se um de padrão simples, onde Observers são classes com um método de notificação e Subject é uma classe responsável por adicionar ou remover um Observer em sua coleção interna de Observers e notificá-los sobre uma alteração de estado.",
+          "No RxJS, subjects e observables são objetos semelhantes, os subjects herdam dos observables (e também de observer), possuindo assim todos os métodos disponíveis nos observables (em ambos objetos podemos chamar o método subscribe para “escutar” atualizações), mas em subject, por herdar de observer, temos também os métodos next , error e complete.",
+          "A principal diferença é que os subjects possuem estados e mantém uma lista de observers registrados para receberem atualizações desse estado e são a única forma de publicar (através do next herdado de observer) a mesma informação para vários observadores diferentes simultâneamente.",
+          "Todas alternativas estão corretas."
         ]
       }
     ],
