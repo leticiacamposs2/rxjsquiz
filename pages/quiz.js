@@ -1,6 +1,7 @@
 import React from 'react';
-import db from '../db.json';
 import Lottie from 'react-lottie';
+
+import db from '../db.json';
 import animationData from '../loader.json';
 
 import Widget from '../src/components/Widget';
@@ -9,6 +10,7 @@ import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
 import AlternativesForm from '../src/components/AlternativesForm';
 import Button from '../src/components/Button';
+import BackLinkArrow from '../src/components/BackLinkArrow';
 
 function ResultWidget({ results }) {
     return (
@@ -45,6 +47,12 @@ function ResultWidget({ results }) {
               </li>
             ))}
           </ul>
+          <Button onClick={(event) => {
+            event.preventDefault();
+            window.location.href='/';
+          }}>
+            Jogar Novamente
+          </Button>
         </Widget.Content>
       </Widget>
     );
@@ -93,6 +101,7 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/" />
         <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
         </h3>
