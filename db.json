@@ -26,6 +26,18 @@
           "A principal diferença é que os subjects possuem estados e mantém uma lista de observers registrados para receberem atualizações desse estado e são a única forma de publicar (através do next herdado de observer) a mesma informação para vários observadores diferentes simultâneamente.",
           "Todas alternativas estão corretas."
         ]
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/proxy/1Iy1jaPj-t8FznBhOqTY9v-IZgTMmvzOfCeSUidAOl5tvvDpb_YnOcbqt5ZQHBHEkm4JnwTzV2wCK2Di8I0",
+        "title": "Quais são os principais operadores (funções) do RxJS?",
+        "description": "Selecione uma alternativa",
+        "answer": 2,
+        "alternatives": [
+          "(==), (!=), (===), (>), (<)",
+          "AND, OR, XOR, NOT",
+          "map(), first(), pipe(), concatAll(), mergeAll(), switchAll()",
+          "typeof, void, instanceof, this"
+        ]
       }
     ],
     "external": [
