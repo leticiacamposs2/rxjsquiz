@@ -49,7 +49,7 @@ function ResultWidget({ results }) {
           </ul>
           <Button onClick={(event) => {
             event.preventDefault();
-            window.location.href='/';
+            window.location.href="/";
           }}>
             Jogar Novamente
           </Button>

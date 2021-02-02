@@ -7,12 +7,12 @@
         "image": "https://rxjs-dev.firebaseapp.com/generated/images/marketing/home/Rx_Logo-512-512.png",
         "title": "O que é RxJS?",
         "description": "Essa é pra aquecer",
-        "answer": 2,
+        "answer": 0,
         "alternatives": [
-          "alternativa 1",
-          "alternativa 2",
-          "alternativa 3",
-          "alternativa 4"
+          "RxJS é uma biblioteca JavaScript para compor programas assíncronos e baseados em eventos usando sequências observáveis, trazendo conceito de programação reativa para a Web.",
+          "RxJS é uma biblioteca que possibilita o uso da programação reativa para a linguagem de programação Java. O Rx significa Reactive Extensions (Reactivex), que é um projecto que fornece a implementação da programação reativa para diferentes linguagens de programação (ex: RxJava, RxSwift, Rx.Net e etc..)",
+          "RxJS é uma implementação, em Swift, da lib ReactiveX. Esta lib é uma composição de programas assíncronos e de programas baseados em eventos utilizando sequências observáveis.",
+          "RxJS é uma biblioteca que possibilita o uso da programação reativa para a linguagem de programação Scala, baseados em eventos usando sequências observáveis."
         ]
       },
       {
