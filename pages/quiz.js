@@ -1,5 +1,8 @@
 import React from 'react';
 import db from '../db.json';
+import Lottie from 'react-lottie';
+import animationData from '../loader.json';
+
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
@@ -48,6 +51,15 @@ function ResultWidget({ results }) {
 }
 
 function LoadingWidget() {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
+
   return (
     <Widget>
       <Widget.Header>
@@ -55,7 +67,11 @@ function LoadingWidget() {
       </Widget.Header>
 
       <Widget.Content>
-        [Desafio do Loading]
+        <Lottie 
+          options={defaultOptions}
+          height={200}
+          width={200}
+        />
       </Widget.Content>
     </Widget>
   );
@@ -166,7 +182,6 @@ export default function QuizPage() {
     }, []);
 
     function addResult(result) {
-        // results.push(result);
         setResults([
         ...results,
         result,
